@@ -8,7 +8,7 @@ function MeetupItem(props) {
   const [loading, setLoading] = useState(false);
 
   function showDetailsHandler() {
-    setLoading(true);
+    setLoading(!loading);
     router.push("/" + props.id);
   }
 
